@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Approval</title>
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="sidebar">
+            <ul class="navbar-nav putih sidebar sidebar-light accordion" id="accordionSidebar">
+                <div class="img-fluid sidebar-brand d-flex align-items-center justify-content-center my-2 flex-column">
+                    <img class="logo"
+                    src="img/Logo NM New1.png">
+                </div>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-fw fa-home"></i>
+                        <span>Beranda</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="cuti.html">
+                        <i class="fas fa-fw fa-book"></i>
+                        <span>Administrasi</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="approval.html">
+                        <i class="fas fa-fw fa-user-check"></i>
+                        <span>Persetujuan</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-fw fa-box"></i>
+                        <span>Produksi</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-fw fa-chair"></i>
+                        <span>Fasilitas</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="SOP.html">
+                        <i class="fas fa-fw fa-file"></i>
+                        <span>SOP</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="IK.html">
+                        <i class="fas fa-fw fa-archive"></i>
+                        <span>IK</span>
+                    </a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <div class="container my-auto text-left" >
+                    <div class="copyright text-center font-italic">
+                        <span class="small">&copy; P.E - Digitalization - 2022 </span>
+                    </div>
+                </div>
+            </ul><!-- End of Sidebar -->
+        </div><!-- End of Class Sticky sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="topbar">
+                <nav class="navbar navbar-expand navbar-light biru topbar mb-2 shading">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle ml-1 mt-3">
+                            <i class="fa fa-bars text-white text-xs"></i>
+                        </button>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-profile rounded-circle"
+                            src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="password.html">
+                            <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Ubah Password
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav><!-- End of Topbar -->
+            </div>
+        <div id="content" class="mt-lg-5 p-2">
+                
+                               <!-- Begin Page Content -->
+               <div class="container-fluid">
+                <div class="row">
+                    <h1 class="h3 mb-4 ml-2 text-gray-800">Approval</h1>
+                </div>
+                 <!-- Card Profile Cuti -->
+                 <div class="row">
+                    <div class="col-sm-9 mb-4">
+                        <div class="row-2-cols-md-5 card-body tumpul bg-light-biru text-primary">
+                            <i class="fas fa-fw fa-lightbulb"></i>
+                            <span>Berikut adalah daftar Permintaan Persetujuan</span>
+                        </div>
+                        <!-- End Table -->
+                    </div>
+                 </div>
+                 <!-- DataTales Example -->
+                 <div class="row">
+                 <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold">Permintaan Persetujuan</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead class="kuning">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>ID PERMIT</th>
+                                        <th>Nama</th>
+                                        <th>Asal Perusahaan</th>
+                                        <th>Keperluan</th>
+                                        <th>Tanggal In</th>
+                                        <th>Tanggal Out</th>
+                                        <th>Jam In</th>
+                                        <th>Jam Out</th>
+                                        <th>User</th>
+                                        <th>Seksi</th>
+                                        <th>Status</th>
+                                        <th style="padding-right: 2rem;">Aksi</th>
+                                        <th>Approved By</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>244543543</td>
+                                        <td>Achmad Bariq Maulana</td>
+                                        <td>PT</td>
+                                        <td>Cuti</td>
+                                        <td>10/07/2022</td>
+                                        <td>13/08/2022</td>
+                                        <td>07:10</td>
+                                        <td>16:00</td>
+                                        <td>User</td>
+                                        <td>Seksi</td>
+                                        <td>Belum Konfirmasi</td>
+                                        <td>
+                                            <a class="centang text-success" href="#" data-toggle="modal" data-target="#confirmModalya"> 
+                                                <i class="fas fa-fw fa-check-circle"></i></a>
+                                            <a class="cenrang text-danger  href="#" data-toggle="modal" data-target="#confirmModaltidak"><i class="fas fa-fw fa-times-circle"></i></a>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>244543543</td>
+                                        <td>Achmad Bariq Maulana</td>
+                                        <td>PT</td>
+                                        <td>Dinas Luar</td>
+                                        <td>15/08/2022</td>
+                                        <td>13/09/2022</td>
+                                        <td>07:10</td>
+                                        <td>16:00</td>
+                                        <td>User</td>
+                                        <td>Seksi</td>
+                                        <td>Sudah Konfirmasi</td>
+                                        <td>
+                                            <a class="centang text-success noHover"> <i class="fas fa-fw fa-check-circle"></i></a>
+                                            <a class="cenrang text-gray-700"><i class="fas fa-fw fa-times-circle"></i></a>
+                                        </td>
+                                        <td>Ibnu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>244543543</td>
+                                        <td>Achmad Bariq Maulana</td>
+                                        <td>PT</td>
+                                        <td>Cuti</td>
+                                        <td>18/08/2022</td>
+                                        <td>19/09/2022</td>
+                                        <td>07:10</td>
+                                        <td>16:00</td>
+                                        <td>User</td>
+                                        <td>Seksi</td>
+                                        <td>Sudah Konfirmasi</td>
+                                        <td>
+                                            <a class="centang text-gray-700"> <i class="fas fa-fw fa-check-circle"></i></a>
+                                            <a class="cenrang text-danger noHover"><i class="fas fa-fw fa-times-circle"></i></a>
+                                        </td>
+                                        <td>Ibnu</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+<!-- /.end tabel-->
+            
+        </div><!-- End of Main Content -->
+        </div><!-- End of Content wrapper -->
+    </div><!-- End of Page Wrapper -->
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Anda Ingin Keluar</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">Silahkan pilih "Logout" untuk keluar dari halaman ini.</div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="#">Logout</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cuti</title>
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="sidebar">
+            <ul class="navbar-nav putih sidebar sidebar-light accordion" id="accordionSidebar">
+                <div class="img-fluid sidebar-brand d-flex align-items-center justify-content-center my-2 flex-column">
+                    <img class="logo"
+                    src="img/Logo NM New1.png">
+                </div>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-fw fa-home"></i>
+                        <span>Beranda</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="cuti.html">
+                        <i class="fas fa-fw fa-book"></i>
+                        <span>Administrasi</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="approval.html">
+                        <i class="fas fa-fw fa-user-check"></i>
+                        <span>Persetujuan</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-fw fa-box"></i>
+                        <span>Produksi</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="fas fa-fw fa-chair"></i>
+                        <span>Fasilitas</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="SOP.html">
+                        <i class="fas fa-fw fa-file"></i>
+                        <span>SOP</span></a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="IK.html">
+                        <i class="fas fa-fw fa-archive"></i>
+                        <span>IK</span>
+                    </a>
+                </li>
+                <hr class="sidebar-divider my-0">
+                <div class="container my-auto text-left" >
+                    <div class="copyright text-center font-italic">
+                        <span class="small">&copy; P.E - Digitalization - 2022 </span>
+                    </div>
+                </div>
+            </ul><!-- End of Sidebar -->
+        </div><!-- End of Class Sticky sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="topbar">
+                <nav class="navbar navbar-expand navbar-light biru topbar mb-2 shading">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle ml-1 mt-3">
+                            <i class="fa fa-bars text-white text-xs"></i>
+                        </button>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-profile rounded-circle"
+                            src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="password.html">
+                            <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i><span> Ubah Password</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i><span> Logout</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav><!-- End of Topbar -->
+            </div>
+        <div id="content" class="mt-lg-5 p-2">
+                
+                              <!-- Begin Page Content -->
+                              <div class="container-fluid">
+                                <div class="row">
+                                    <h1 class="h3 mb-4 ml-2 text-gray-800">Cuti</h1>
+                                </div>
+                                 <!-- Card Profile Cuti -->
+                                 <div class="row">
+                                    <div class="col-sm-6 card mb-4 tumpul">
+                                        <div class="row-2-cols-md-2 card-body">
+                                            <div class="table-responsive table-borderless">
+                                                <table class="table">   
+                                                        <tr>
+                                                            <td class="font-weight-bolder">Cuti Tahunan</td>
+                                                            <td>: 10 Hari</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-bolder">Cuti Besar</td>
+                                                            <td>: 2 Hari</td>
+                                                        </tr>
+                                                </table>
+                                            </div>
+                                            <div class="row-cols-1 text-left justify-content-center my-4">
+                                                <a href="#" id="cutiModal" class="btn btn-primary btn-icon-split btn-sm btn-biru" style="width: 7rem;">
+                                                    <span class="text">Ajukan Cuti</span>
+                                                </a>
+                                                <a href="#" class="btn btn-primary btn-icon-split btn-sm btn-biru" style="width: 7rem;">
+                                                    <span class="text">Jenis Cuti</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- End Table -->
+                                    </div>
+                                 </div>
+                                 <!-- DataTales Example -->
+                                 <div class="row">
+                                 <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold">Riwayat Cuti</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                <thead class="kuning">
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>ID</th>
+                                                        <th>Tanggal Request</th>
+                                                        <th>NRP</th>
+                                                        <th>Nama</th>
+                                                        <th>Jumlah Cuti</th>
+                                                        <th>Jenis Cuti</th>
+                                                        <th>Tanggal Mulai</th>
+                                                        <th>Tanggal Selesai</th>
+                                                        <th>Keperluan</th>
+                                                        <th>Lampiran</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>244543543</td>
+                                                        <td>07/07/2022</td>
+                                                        <td>00000</td>
+                                                        <td>Ibnu Sina Hanif</td>
+                                                        <td>1</td>
+                                                        <td>Tahunan</td>
+                                                        <td>10/07/2022</td>
+                                                        <td>12/07/2022</td>
+                                                        <td>Keluarga</td>
+                                                        <td class="small font-italic"><a href="#">Lampiran-1</a></td>
+                                                        <td>Proses</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>244543543</td>
+                                                        <td>07/07/2022</td>
+                                                        <td>00001</td>
+                                                        <td>Achmad Bariq Maulana</td>
+                                                        <td>1</td>
+                                                        <td>Tahunan</td>
+                                                        <td>10/07/2022</td>
+                                                        <td>13/08/2022</td>
+                                                        <td>Keluarga</td>
+                                                        <td class="small font-italic"><a href="#">Lampiran-bariq</a></td>
+                                                        <td>Proses</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>244543543</td>
+                                                        <td>07/07/2022</td>
+                                                        <td>00002</td>
+                                                        <td>Euis Rahmawati</td>
+                                                        <td>1</td>
+                                                        <td>Tahunan</td>
+                                                        <td>11/07/2022</td>
+                                                        <td>12/07/2022</td>
+                                                        <td>Keluarga</td>
+                                                        <td class="small font-italic"><a href="#">DOC-001</a></td>
+                                                        <td>Proses</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+            
+        </div><!-- End of Main Content -->
+        </div><!-- End of Content wrapper -->
+    </div><!-- End of Page Wrapper -->
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Anda Ingin Keluar</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">Silahkan pilih "Logout" untuk keluar dari halaman ini.</div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="#">Logout</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+        <!-- Cuti Modal-->
+        <div class="modal fade modal-xl" id="cutiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ajukan Cuti</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body modal-xl">
+                <div class="smol ml-2 p-2">
+                    <div class="modal-body">
+                        <div class="row ">
+                            <div class="col col-12 col-lg-6 ">
+                                <div class="row">
+                                <div class="col col-4  ">NRP</div>
+                                <div class="col col-8 ">: <!--  <?php echo $_SESSION['nrp']; ?></div>
+                                <div class="col col-4  "></div>
+                                <div class="col col-8 "></div>
+                                <div class="col col-4  mt-3">Nama</div>
+                                <div class="col col-8  mt-3">:  <?php echo $_SESSION['nama']; ?></div>
+                                <div class="col col-4 "></div>
+                                <div class="col col-8 "></div>
+                                <div class="col col-4  mt-3">Seksi</div>
+                                <div class="col col-8  mt-3">: <?php echo $_SESSION['seksi']; ?></div>
+                                <div class="col col-4 "></div>
+                                <div class="col col-8 "></div>
+                                <div class="col col-4  mt-3">Departement</div>
+                                <div class="col col-8  mt-3">: <?php echo $_SESSION['departemen']; ?></div>
+                                </div>
+                            </div>
+                            <div class="col col-12  col-lg-6 ">
+                                <div class="row">
+                                    <div class="col col-4  pt-2 mx-0 mt-3">Tanggal</div>
+                                    <div class="col col-8  p-0 mt-3"><input type="date" class="form-control" name="tanggal_mulai" required /></div>
+                                    <div class="col col-4  pt-2 mx-0">S/d</div>
+                                    <div class="col col-8  p-0"><input type="date" class="form-control" name="tanggal_selesai" required /></div>
+    
+                                    <div class="col col-4  pt-2 mx-0">Jumlah Hari</div>
+                                    <div class="col col-2  p-0"> <input type="number" min="1" max="50" class="form-control" name="jumlah_cuti" required /></div>
+    
+                                    <!-- <div class="col col-2  mx-0"></div> -->
+                                    <div class="col col-6  p-0">
+                                        <select style="width:180px ; height: 36px;" name="jenis_cuti">
+                                            <option class="dropdown-item" name="jenis_cuti" id="Cuti Tahunan" value="Cuti Tahunan" selected>-- Pilih Jenis Cuti --</option>
+                                            <option class="dropdown-item" name="jenis_cuti" id="Cuti Tahunan" value="Cuti Tahunan">Cuti Tahunan</option>
+                                            <option class="dropdown-item" name="jenis_cuti" id="Cuti Besar" value="Cuti Besar">Cuti Besar</option>
+                                            <option class="dropdown-item" name="jenis_cuti" id="Cuti Melahirkan" value="Cuti Melahirkan">Cuti Melahirkan</option>
+                                            <option class="dropdown-item" name="jenis_cuti" id="Cuti Haid" value="Cuti Haid">Cuti Haid</option>
+                                            <option class="dropdown-item" name="jenis_cuti" id="Cuti Pasal 72 PKB" value="Cuti Pasal 72 PKB">Cuti Pasal 72 PKB</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="col col-4  pt-3 mx-0">Keperluan</div>
+                                    <div class="col col-8 p-0"><textarea class="form-control" id="keperluan" name="keperluan" required></textarea></div>
+    
+                                    <div class="col col-4  pt-1 mx-0">Lampiran</div>
+                                    <div class="col col-8 p-0 "> <input type="file" name="lampiran" id="lampiran"></div>
+                                    <label style="color:red; font-size:13px"> *untuk jenis cuti sesuai pasal 72 PKB, harus disertai lampiran.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" style="width: 6rem;" data-dismiss="modal">Tutup</button>
+                <button class="btn btn-primary" id="myBtn" type="button" style="width: 6rem;" data-dismiss="modal">
+                 <i class="fas fa-pencil-alt fa-sm fa-fw"></i> Ubah</button>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
